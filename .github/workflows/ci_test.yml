@@ -27,7 +27,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Set up Node
-      uses: actions/checkout@v1
+    - uses: actions/checkout@v1
       with: 
         node-version: 12.x
     
