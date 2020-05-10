@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: Industrial;
+  src: url(./assests/Industry/Industry-Bold.ttf)
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body{
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  min-height: 100%;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
+  background: #000 url('./assests/background2.png') no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, input, button{
+  font-family: Industrial, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flexbox; 
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  justify-content: center; 
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center; 
+  display: flex;
+  height: 95px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 100%;
+  margin: 0 30px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img {
+  height: 100%;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menulist {
+  list-style-type: none;
+  padding: 10px;  
+  margin: 20px auto;
+}
+
+.menulist_item {
+  display: inline-block;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.menulist_item:last-child {
+  margin-right: 0;
+}
+
+.menulink {
+  color: #FFF;
+  display: inline-block;
+  height: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.menulink:hover {
+  color: #f54900;
+}
+
+.menulink--active {
+  color: #f54900;    
+  font-weight: 800;
+}
+
+.direita {
+  position: absolute;  
+  width: 40%;
+  height: 85.8%; 
+  bottom: 0;
+  right: 0;                 
+}
+
+.direita img {
+  height: 100%;
+  width: 400px;
+  float: right;    
+}
+
+.esquerda {
+  width: 50%;
+  background-color: #FFF;      
+}
+
+.esquerda h1 {
+  font-size: 30px;
+  color: #f54900;
+  letter-spacing: 1rem;  
 }
