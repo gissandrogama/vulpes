@@ -18,7 +18,7 @@ function Header() {
             <li className="menulist_item"><a href="/loja" className="menulink">LOJA</a></li>
             <li className="menulist_item"><a href="#" className="menulink">EQUIPES</a></li>
             <li className="menulist_item"><a href="#" className="menulink">PARCEIROS</a></li>
-            <li className="menulist_item"><a href="#" className="menulink">SOBRE</a></li>
+            <li className="menulist_item"><a href="/sobre" className="menulink">SOBRE</a></li>
           </ul>
         </div>
 

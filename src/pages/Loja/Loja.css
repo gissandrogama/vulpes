@@ -1,0 +1,24 @@
+.loja-content {
+    margin: 30px auto 0;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loja-content > p {    
+    color: #FFF;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.logo-loja {
+    width: 350px;
+}
+
+.logo-loja img {
+    margin: 0 auto;
+    width: 350px;
+}

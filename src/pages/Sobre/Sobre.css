@@ -1,0 +1,29 @@
+.sobre-content {
+    margin: 80px auto 0;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../../assets/sobre/background.png');
+    -webkit-box-shadow: 2px 2px 31px -4px rgba(245,73,0,0.65);
+    -moz-box-shadow: 2px 2px 31px -4px rgba(245,73,0,0.65);
+    box-shadow: 2px 2px 31px -4px rgba(245,73,0,0.65);
+}
+
+.sobre-content > p {    
+    color: #FFF;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.sobre {
+    margin: 10px 0 auto;
+    width: 250px;    
+}
+
+.sobre img {
+    margin: 0 auto;
+    width: 100%;
+}
