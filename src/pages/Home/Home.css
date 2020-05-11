@@ -1,7 +1,11 @@
+@keyframes animacao {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 .container {
   margin: 150px 0 auto 200px;
   max-width: 650px;
-  display: flex; 
+  display: flex;
 }
 
 .direita {
@@ -15,12 +19,18 @@
 .direita img {
   max-width: 100%;
   height: 100%;
-  float: right;    
+  float: right;
+  animation-name: animacao;
+  animation-duration: 4s;  
+  animation-timing-function: initial;   
 }
 
-.content {
+.content {  
   width: 100%; 
   padding: 20px;
+  animation-name: animacao;
+  animation-duration: 3s;  
+  animation-timing-function: unset;
 }
 
 .content > p {

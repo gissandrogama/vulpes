@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'; 
 
 import './Home.css';
 
@@ -13,8 +14,10 @@ function Home() {
           <h1>VULPES</h1>
           <p>Olá, nós somos um time</p>
           <p>competitivo de eSport.</p>
-
-          <button className="btn">VER MAIS</button>    
+          
+          <Link to="/sobre">
+            <button className="btn">VER MAIS</button>      
+          </Link>
       </div>   
 
       <div className="direita">        
