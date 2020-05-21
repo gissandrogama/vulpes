@@ -11,12 +11,11 @@
 }
 
 html, body{
-  height: 100%;
+  height: 100vh;
 }
 
 #root {
-  min-height: 100%;
-  position: relative;
+  height: 100vh;
 }
 
 body {
@@ -28,4 +27,107 @@ body {
 body, input, button{
   font-family: Industrial, Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-size: 1.5em;  
+}
+
+.menu {
+  background-color: #000;
+  width: 100vw;
+  height: 150px;  
+}
+
+.menu ul {
+  width: 80vw;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 700;
+}
+ 
+.logo {
+  width: 20vw;
+  margin-right: 5px;  
+}
+ 
+.logo img {
+  height: 100%;
+  margin-left: 3em;
+    
+}
+
+.menu .active {
+ color: #f54900;      
+ font-weight: 700;
+ font-size: 1.5em; 
+}
+
+/* @media screen and (max-width: 1024px) {
+   .menu{
+     height: 100%;  
+   }
+   
+   .menulist {
+     list-style-type: none;
+     padding: 10px;
+     margin: 10px auto 0;  
+   }
+   
+   .menulist_item {
+     display: inline-block;
+     height: 100%;    
+   }
+   
+   .menulist_item:last-child {
+     margin-right: 0;
+   }
+   
+   .menulink {
+     color: #FFF;
+     height: 100%;
+     font-size: 18px;
+     text-decoration: none;
+     text-transform: uppercase;
+     display: flex;
+     align-items: center;
+     padding: 0 30px;
+     font-weight: bold;
+   }
+ 
+   .menulink:hover {
+     color: #f54900;
+   }
+   
+   .active {
+     color: #f54900;      
+     font-weight: 700;
+     font-size: 18px;
+   } 
+} */
+ 
+@media(max-width: 550px) {
+  .menu { display: none;}
+  .header {
+    height: 15em;
+  }
+}
+
+@media(max-width: 770px) {
+  .menu { display: none;}
 }

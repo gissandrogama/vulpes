@@ -2,22 +2,22 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
 .container {
-  margin: 150px 0 auto 200px;
-  max-width: 650px;
+  max-width: 650px; 
   display: flex;
 }
 
 .direita {
   position: absolute;  
-  width: 40%;
-  height: 550px; 
+  width: 40vw;
+  height: 80vh; 
   bottom: 0;
   right: 0;                 
 }
 
 .direita img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   float: right;
   animation-name: animacao;
@@ -25,125 +25,78 @@
   animation-timing-function: initial;   
 }
 
-.content {  
-  width: 100%; 
-  padding: 20px;
+.content {
+  max-width: 650px;   
+  width: 95%; 
+  padding: 15px;
   animation-name: animacao;
   animation-duration: 3s;  
   animation-timing-function: unset;
 }
 
 .content > p {
-  font-size: 30px;
-  line-height: 22px;
+  font-size: 3em;
+  line-height: 1em;
   margin-bottom: 20px;
   font-style: normal;
   color: #FFF;
 }
 
-.content h1 {
-  font-size: 70px;
+.titulo {
+  font-size: 6em;
   color: #f54900;
-  letter-spacing: 0.7rem;
+  letter-spacing: 1.5rem;
   font-weight: 900;
-  margin-bottom: 20px;
+  line-height: 1.8em;  
 }
 
-.content button.btn {
+.content .btn {
   border: solid 3px #f54900;
   border-radius: 10px;
-  max-width: 650px;
-  width: 40%;
+  max-width: 520px;
+  width: 80vw;
   height: 50px;
-  padding: 0 20px;
-  font-size: 25px;
+  padding: 0 1em;
+  font-size: 2em;
   font-weight: bold;
   color: #FFF;
   background: none;
-  cursor: pointer;  
+  cursor: pointer;
+  transition: 800ms;  
 }
 
-.content button.btn:hover {
+.content .btn:hover {
   color: #f54900;
-  border: solid 3px #FFF;
-  font-size: 28px;
-  transition: 0.1s;
+  border: solid 3px #FFF;    
 }
 
-@media screen and (max-width: 1024px) {  
+@media(max-width: 550px){
+  .direita {
+    display: none;
+  }
+
   .container {
-    margin: 150px 0 auto;
-    max-width: 650px;
-    width: 100%;
-    display: flex; 
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .container {
-    margin: 150px 0 auto;
-    max-width: 650px;
-    width: 100%;
-    display: flex; 
-  }
-
-  .direita {      
-    width: 40%;
-    height: 60%; 
-    bottom: 0;
-    right: 0;                 
-  }
-  
-  .direita img {
-    max-width: 100%;  
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content {
-    width: 100%; 
-    padding: 20px;    
-  }
-  
-  .content > p {
-    font-size: 30px;
-    line-height: 22px;
-    margin-bottom: 20px;
-    font-style: normal;
-    color: #FFF;
-    text-align: center;
+    transition:  ease animacao 1s;
+    justify-content: center;     
   }
   
   .content h1 {
-    font-size: 70px;
-    color: #f54900;
-    letter-spacing: 0.7rem;
-    font-weight: 900;
-    margin-bottom: 20px;
     text-align: center;
   }
-  
-  .direita { display: none; }  
-  .container2 {
-    margin: 150px 0 auto;
-    max-width: 450px;
-    width: 100%;
-    display: flex; 
+
+  .content > p {
+    font-size: 2.2em;
+    text-align: center;
   }
 
-  .content button.btn {
-    border: solid 3px #f54900;
-    border-radius: 10px;
-    max-width: 450px;
-    width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #FFF;
-    background: none;
-    cursor: pointer;  
+  .titulo {
+    font-size: 5em;
+    letter-spacing: 0.8rem;       
+  }
+
+
+
+  .content .btn {
+    width: 100%;  
   }
 }
-
-  
