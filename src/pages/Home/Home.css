@@ -4,6 +4,8 @@
 }
 
 .container {
+  margin-top: 100px;
+  margin-left: 200px;
   max-width: 650px; 
   display: flex;
 }
@@ -54,7 +56,7 @@
   border: solid 3px #f54900;
   border-radius: 10px;
   max-width: 520px;
-  width: 80vw;
+  width: 250px;
   height: 50px;
   padding: 0 1em;
   font-size: 2em;
@@ -76,6 +78,7 @@
   }
 
   .container {
+    margin: 0;
     transition:  ease animacao 1s;
     justify-content: center;     
   }
