@@ -11,9 +11,8 @@ function Home() {
     <div className="container">
 
       <div className="content">
-          <h1>VULPES</h1>
-          <p>Olá, nós somos um time</p>
-          <p>competitivo de eSport.</p>
+          <h1 className="titulo">VULPES</h1>
+          <p>Olá, nós somos um time competitivo de eSport.</p>
           
           <Link to="/sobre">
             <button className="btn">VER MAIS</button>      
