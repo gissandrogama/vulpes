@@ -8,7 +8,7 @@ import Bengala from '../../assets/especies/Bengala.png'
 
 function Sobre() {
   return (
-    <>
+    <section id="estiloscroll" className="grid">
     <div className="box">
     <h1>Quem Somos</h1>    
     <div className="sobre-content">
@@ -40,9 +40,9 @@ function Sobre() {
             <p>Bengala</p>            
         </div>  
         <p>texto</p>
-    </div>   
+    </div>    
     </div>
-    </>
+    </section>
   );
 }
 
